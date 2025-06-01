@@ -6,7 +6,7 @@
     <title>Dream-home</title>
 </head>
 <style>
-    body{
+    .body{
         background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/044/original/max-pruvost-OJ02cQHePds-unsplash.jpg?1748706682);
         background-size:  cover;
         background-repeat:   no-repeat;
@@ -15,10 +15,49 @@
         height: 100vh; 
         overflow-y: hidden ! important;
         overflow-x: hidden ! important;
-        filter: blur(8px);
+        backdrop-filter: blur(3px);         /* blurs the background behind */ 
+        -webkit-backdrop-filter: blur(3px); 
+
+    }
+
+    .container{
+        background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
+        padding: 30px;
+        display: inline-block; /* Makes it only as wide as the content */
+        border-radius: 10px
+        
+    }
+
+    .home{
+        height: 450px;
+        display: flex;
+        border: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        
+        
+
+    }
+
+    .kitchen{
+        height: 300px;
+        display: flex;
+        border: none;
     }
 </style>
-<body>
+<body class="body">
+   <div class="container">
+    <div class="home">
+        welcome to my wonderful home
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/060/original/igor-savelev-hnFmQgrmLt4-unsplash-removebg-preview.png?1748715312
+        " alt="home image">
+    </div>
+   </div>
+    <!-- <div class="kitchen">
+        <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/045/original/kam-idris-vqMQN9zImG4-unsplash.jpg?1748706781
+        " alt="">
+    </div> -->
     
 </body>
 </html>
